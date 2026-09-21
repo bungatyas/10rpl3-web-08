@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #cc8ba4;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #e6c4d6;
+}
+</style>
+</head>
+<body>
+
+<h2>Data Biodata Siswa PPLG</h2>
+
+<table>
+  <tr>
+    <th>Fiel/atribut</th>
+    <th>Keterangan/Hasil Input</th>
+  </tr>
+  <tr>
+    <td>Nama:</td>
+    <td>Bunga Tyas Diah Safitri</td>
+  </tr>
+  <tr>
+    <td>Alamat:</td>
+    <td>Kedungpedaringan</td>
+  </tr>
+  <tr>
+    <td>Jurusan:</td>
+    <td>RPL</td>
+  </tr>
+  <tr>
+    <td>Jenis Kelamin:</td>
+    <td>Perempuan</td>
+  </tr>
+  <tr>
+    <td>Tinggi Badan (cm):</td>
+    <td>150</td>
+  </tr>
+ <tr>
+    <td>Berat Badan (kg):</td>
+    <td>48</td>
+  </tr>
+  <tr>
+    <td>Hobi:</td>
+    <td>Scoll Tiktok</td>
+  </tr>
+   <tr>
+    <td>No.HP:</td>
+    <td>123456789</td>
+    </tr>
+    </tr><table>
+    <th> Status: Data berhasil di validasi dan di rekap ke dalam tabel</th>
+  </table>
+  </tr>
+</table>
+
+</body>
+</html>
+<br>
+<h2>Visualisasi Jelas: Merge & Split Cell</h2>
+
+<table border="1" style="border-collapse: collapse; text-align: center; width: 100%;">
+  <!-- BARIS 1: Header (3 Judul Kolom) -->
+  <tr>
+    <th>Kategori Data</th>
+    <th>Atribut Form</th>
+    <th>Hasil Isian Siswa</th>
+  </tr>
+
+  <!-- BARIS 2: Awal Merge 3 Baris (Kolom 1 mengambil jatah 3 baris ke bawah) -->
+  <tr>
+    <th rowspan="3"> IDENTITAS PRIBADI</th>
+    <td>Nama:</td>
+    <td>bunga tyas diah safitri</td>
+  </tr>
+  
+  <!-- BARIS 3: Data Baris ke-2 -->
+  <tr>
+    <td>Alamat:</td>
+    <td>Kedungpedaringan</td>
+  </tr>
+  
+  <!-- BARIS 4: Data Baris ke-3 -->
+  <tr>
+    <td>No.hp:</td>
+    <td>12345689</td>
+  </tr>
+  <th>Akademik</th>
+    <td>Jurusan</td>
+    <td>RPL</td>
+    <tr>
+  <th>Preferensi</th>
+    <td>Jenis kelamin</td>
+    <td>perempuan</td>
+    <tr>
+ <!-- DATA FISIK -->
+   <tr>
+   <th class="kategori" rowspan="2">
+   Data Fisik
+   </th>
+
+   <td rowspan="2">
+    Pengukuran<br>Badan
+   </td>
+
+   <td>
+    Tinggi: 150,5cm
+   </td>
+   </tr>
+
+   <tr>
+   <td>
+   Berat: 47 kg
+   </td>
+   </tr>  
+ <th>Lain-lain</th>
+    <td>Hobi :</td>
+    <td>scoll tiktok</td>
+ <tr> 
+</table>
+
+
+
+<body>
+<html>
+
+ <h1>Tantangan Tabel Kompleks</h1>
+ <table>
+ <!-- HEADER -->
+ <tr>
+   <th>Kategori Utama </th>
+   <th> Sub kategori</th>
+   <th> Atribut isisan</th>
+   <th>Detail data/nilai</th>
+  </tr>
+
+  <!-- DATA SISWA -->
+  <tr>
+ <!-- MERGE 3 BARIS -->
+   <th class="kategori" rowspan="3">
+   DATA SISWA
+   </th>
+
+  <!-- MERGE 2 BARIS -->
+   <td class="sub" rowspan="2">
+      Identitas Utama
+   </td>
+
+   <td class="atribut">
+     Nama Lengkap
+  </td>
+
+  <td class="detail">
+    Bunga tyas diah safitri
+  </td>
+
+  </tr>
+
+
+  <tr>
+
+  <td class="atribut">
+    Alamat Rumah
+  </td>
+
+  <td class="detail">
+    Kedungpedaringan
+  </td>
+
+  </tr>
+
+
+  <!-- BARIS KETIGA DATA SISWA -->
+  <tr>
+
+   <td colspan="2" class="kontak">
+            Kontak Aktif: 085607592498
+        </td>
+
+   <td>Hobi: Bermain game, Memasak</td>
+ </tr>
+  <th>Akademik</th>
+    <td>Jurusan PPLG</td>
+    <td>Pilihan kelas</td>
+    <td>RPL(Rekayasa perangak lunak)</td>
+    <tr>
+  <th>Preferensi</th>
+    <td>Gender</td>
+    <td>Jenis Kelamin</td>
+    <td>Perempuan</td>
+    <tr>
+      <tr>
+    <th rowspan="2">Antropometri</th>
+    <td rowspan="2">Pengukuran Fisik</td>
+    <td rowspan="2">Parameter Badan</td>
+
+    <td>
+        Tinggi Badan: 150,5 cm
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+        Berat Badan: 47 kg
+    </td>
+  </tr>
+  </tr><table>
+    <th> Keterangan: Kotak bergaris MERAH hasil "Merge cell"<br>
+    sedangkan<br>
+  kotah bergaris HIJAU adalan simulasi"split cell"</th>
+  </table>
+  </tr>
+</table>
+
+
